@@ -7,12 +7,7 @@
 		"build": "bun next build",
 		"start": "bun next start"
 	},
-	"keywords": [
-		"duolingo",
-		"clone",
-		"bun",
-		"typescript"
-	],
+	"keywords": ["duolingo", "clone", "bun", "typescript"],
 	"author": "dinojs",
 	"license": "ISC",
 	"dependencies": {
@@ -23,14 +18,14 @@
 		"next": "^14.2.14",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
-		"tailwind-merge": "^2.5.2",
+		"tailwind-merge": "^2.5.3",
 		"tailwindcss-animate": "^1.0.7"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.2",
+		"@biomejs/biome": "^1.9.3",
 		"@tsconfig/node22": "^22.0.0",
 		"@types/node": "^22.7.4",
-		"@types/react": "^18.3.10",
+		"@types/react": "^18.3.11",
 		"@types/react-dom": "^18.3.0",
 		"autoprefixer": "^10.4.20",
 		"postcss": "^8.4.47",
