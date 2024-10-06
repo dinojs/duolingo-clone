@@ -7,10 +7,16 @@
 		"build": "bun next build",
 		"start": "bun next start"
 	},
-	"keywords": ["duolingo", "clone", "bun", "typescript"],
+	"keywords": [
+		"duolingo",
+		"clone",
+		"bun",
+		"typescript"
+	],
 	"author": "dinojs",
 	"license": "ISC",
 	"dependencies": {
+		"@clerk/nextjs": "^5.7.1",
 		"@radix-ui/react-slot": "^1.1.0",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.1",
