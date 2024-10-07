@@ -17,12 +17,8 @@ export default function RootLayout({
 }) {
 	return (
 		<ClerkProvider>
-			<html lang="en">
-				<body className={font.className}>
-					<header>{/* Your header content */}</header>
-					<main>{children}</main>
-					<footer>{/* Your footer content */}</footer>
-				</body>
+			<html lang="en" className="h-full">
+				<body className={`${font.className} h-full`}>{children}</body>
 			</html>
 		</ClerkProvider>
 	);
