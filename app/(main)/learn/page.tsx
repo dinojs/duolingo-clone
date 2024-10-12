@@ -6,22 +6,23 @@ import { getUserProgress } from "@/db/queries";
 import { redirect } from "next/navigation";
 
 const LearnPage = async () => {
-	const [userProgress] = await Promise.all([getUserProgress()]);
+	const userProgress = await getUserProgress();
+	const { activeCourse, hearts, points } = userProgress || {};
 
-	if (!userProgress || !userProgress.activeCourse) redirect("/courses");
+	if (!activeCourse) redirect("/courses");
 
 	return (
 		<div className="flex flex-row-reverse gap-[48px] px-6">
 			<StickyWrapper>
 				<UserProgress
-					activeCourse={{ title: "Italian", imageSrc: "/it.svg" }}
-					hearts={5}
-					points={100}
+					activeCourse={activeCourse}
+					hearts={hearts ?? 0}
+					points={points ?? 0}
 					hasActiveSubscription={false}
 				/>
 			</StickyWrapper>
 			<FeedWrapper>
-				<Header title="Italian" />
+				<Header title={activeCourse.title} />
 			</FeedWrapper>
 		</div>
 	);

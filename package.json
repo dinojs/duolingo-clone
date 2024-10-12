@@ -7,14 +7,10 @@
 		"build": "bun next build",
 		"start": "bun next start",
 		"db:studio": "drizzle-kit studio",
-		"db:push": "drizzle-kit push"
+		"db:push": "drizzle-kit push",
+		"db:seed": "bun scripts/seed.ts"
 	},
-	"keywords": [
-		"duolingo",
-		"clone",
-		"bun",
-		"typescript"
-	],
+	"keywords": ["duolingo", "clone", "bun", "typescript"],
 	"author": "dinojs",
 	"license": "ISC",
 	"dependencies": {
